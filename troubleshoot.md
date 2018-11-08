@@ -1,12 +1,12 @@
 
-Problem Description:
+## Problem Description:
 
 When using R package "httr" in Power BI, one will get the following error
 "Error in iconv(x, "latin1", "ASCII") : unsupported conversion from 'latin1' to 'ASCII' in codepage 1252"
 See more details:
 https://community.powerbi.com/t5/Service/Script-works-on-Desktop-but-not-on-Service-Says-quot-unsupported/td-p/180713
 
-Problem Diagnosis:
+## Problem Diagnosis:
 "httr" is one of the packages supported by Power BI.
 https://docs.microsoft.com/en-us/power-bi/service-r-packages-support
 
@@ -32,7 +32,7 @@ R (https://www.r-project.org/)
 
 
 
-Solution:
+## Solution:
 Inside the "httr" package, it call the "regmatches", which cause the error.
 As mentioned in this page,
 https://social.msdn.microsoft.com/Forums/sqlserver/en-US/4d8ac3ee-ea17-42d4-b544-056543c67928/unsupported-conversion-from-latin1-to-ascii-in-codepage-1252?forum=MachineLearning
