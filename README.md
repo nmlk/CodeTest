@@ -22,6 +22,6 @@ An integer price, for the price they pay for each pint of ice cream
 
 An integer overnight_cost, the cost of storing a pint of ice cream for a day 
 
-Output 
+# Output 
 
 An integer representing the minimum cost (in dollars) to meet customer demands 
