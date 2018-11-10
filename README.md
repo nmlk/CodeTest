@@ -1,24 +1,22 @@
-Cost Minimizing Ice Cream Shop 
-
-Problem 
+# Problem: Cost Minimizing Ice Cream Shop 
 
 An ice cream shop is looking to minimize their operation costs, under the given constraints: 
 
-They are faced with costs of purchasing ice cream from a local distributor, where each order has a (potentially large) fixed delivery cost shipping _ cost as well as the price price for each pint to minimize delivery costs, they can buy more ice cream than needed for a qiven day, and keep it stored it in their freezer overniqht their freezer can store Imax capacityl pints of ice cream at any time (includes both the da s shipment as well as any pints stored overnight) 
+They are faced with costs of purchasing ice cream from a local distributor, where each order has a (potentially large) fixed delivery cost shipping_cost as well as the price price for each pint to minimize delivery costs, they can buy more ice cream than needed for a given day, and keep it stored it in their freezer overniqht their freezer can store max capacity pints of ice cream at any time (includes both the da s shipment as well as any pints stored overnight) 
 
 However, storing extra ice cream overnight is not free, and it costs them overnight cost dollars per pint (per night) to keep any additional ice cream frozen if they buy in advance 
 
 Given a list of daily demand (in pints) of ice cream for the next num days days, what is the minimum cost for the shop to be stocked up ready to meet their demands each day? 
 
-Inputs 
+# Inputs 
 
-An integer num _ days , for the number of days 
+An integer num_days , for the number of days 
 
 A list of n integers demands, separated by a space, for the pints of ice cream demanded each day 
 
-An integer max _ capacity , for the max capacity of their freezer 
+An integer max_capacity , for the max capacity of their freezer 
 
-An integer shipping _ cost , for the fixed cost of each shipment taken 
+An integer shipping_cost , for the fixed cost of each shipment taken 
 
 An integer price, for the price they pay for each pint of ice cream 
 
