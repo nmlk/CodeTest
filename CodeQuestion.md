@@ -8,10 +8,8 @@ Solution:
 
 '''python
 arr = [1,1,3,3,3,3,5,5,9,9,9,9]
-
 print set(arr)
-
-//Consider situation with only 1 element
+Consider situation with only 1 element
 def removeDuplicates(arr):
     if arr is None or len(arr)<=1:
         return arr
@@ -40,7 +38,7 @@ def removeDuplicates(arr):
     return arr[:i+1][:]
     
     
-print removeDuplicates(arr)
+    print removeDuplicates(arr)
 '''
 
 2. Maximium continues subarry
