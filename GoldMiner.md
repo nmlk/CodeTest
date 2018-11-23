@@ -13,23 +13,16 @@ gold   = [92,22,87,46,90]
 m = 100
 n = 5
 
-fn = [[0 for i in xrange(n)] for j in xrange(m)]
+fn = [[0 for i in xrange(n+1)] for j in xrange(m)]
 
 for g in range(n):
     for p in range(m):
-        if g==0:
-            if p < people[g]:
-                fn[p][g]= 0
-            else:
-                fn[p][g]= gold[g]
+        if p < people[g]:
+            fn[p][g+1]= fn[p][g]
         else:
-            if p < people[g]:
-                fn[p][g]= fn[p][g-1]
-            else:
-                fn[p][g]= max(fn[p][g-1],gold[g]+fn[p-people[g]][g-1])
-    
+            fn[p][g+1]= max(fn[p][g],gold[g]+fn[p-people[g]][g])
 
-print fn[m-1][n-1]
+print fn[m-1][n]
 ```
 $python main.py
 133
