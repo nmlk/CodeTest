@@ -6,7 +6,7 @@ Giving a sorted array, remove the duplicated elements and keep the uniques eleme
 For example, if the array is [1,1,3,3,3,3,5,5,9,9,9,9]. The unique elements should be [1,3,5,9]
 Solution:
 
-'''python
+```python
 arr = [1,1,3,3,3,3,5,5,9,9,9,9]
 print set(arr)
 Consider situation with only 1 element
@@ -39,14 +39,14 @@ def removeDuplicates(arr):
     
     
     print removeDuplicates(arr)
-'''
+```
 
 2. Maximium continues subarry
 Find the contiguous subarray within an array (containing at least one number) which has the largest sum.
 
 For example, given the array [−2,1,−3,4,−1,2,1,−5,4], the contiguous subarray [4,−1,2,1] has the largest sum = 6.
 
-'''python
+```python
 nums = [-2,1,-3,4,-1,2,1,-5,4]
 
 def maxSubArray(nums):
@@ -60,12 +60,12 @@ def maxSubArray(nums):
     return maxSum
 
 print maxSubArray(nums)
-'''
+```
 
 3. The Fibonacci numbers are the numbers in the following integer sequence.
 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...
 
-'''python
+```python
 def fib(n):
     a, b = 0, 1
     for i in range(n):
@@ -74,10 +74,10 @@ def fib(n):
 
 for i in range(10):
     print(fib(i))
-'''
+```
 
 Fast Solution
-'''python
+```python
 //(Public) Returns F(n).
 def fibonacci(n):
 	if n < 0:
@@ -98,13 +98,13 @@ def _fib(n):
 			return (d, c + d)
 			
 print fibonacci(100)
-'''
+```
 
 
 4. Say you have an array for which the ith element is the price of a given stock on day i.
 If you were only permitted to complete at most one transaction (ie, buy one and sell one share of the stock), 
 design an algorithm to find the maximum profit.
-'''
+```python
 prices = []
 
 def maxProfit(prices):
@@ -118,6 +118,6 @@ def maxProfit(prices):
 	return maxProfit
 
 print maxProfit(prices)
-'''
+```
 
 
